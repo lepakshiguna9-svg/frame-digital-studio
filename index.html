@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9e7e0">
+  <meta name="description" content="FRAME is an independent digital studio exploring the space between image, interaction and feeling.">
+  <title>FRAME — Digital work in motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/projects.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="intro" id="intro">
+    <div class="intro__word">F<span>R</span>AME</div>
+    <div class="intro__foot"><span>INDEPENDENT DIGITAL STUDIO</span><span>EST. 2024 — EVERYWHERE</span></div>
+    <button class="intro__skip" id="skip-intro" type="button">SKIP INTRO ↗</button>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="FRAME, home">FR<span>A</span>ME<span class="wordmark__dot">.</span></a>
+    <div class="header-note">INDEPENDENT DIGITAL STUDIO<br>AVAILABLE FOR SELECT PROJECTS</div>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle__label">MENU</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </header>
+  <nav class="nav-overlay" id="site-nav" aria-label="Main navigation" aria-hidden="true">
+    <div class="nav-overlay__top"><span>FRAME / INDEX</span><span>SELECT A DIRECTION</span></div>
+    <a href="#work" data-nav-link><span>01</span>Selected work<em>↗</em></a>
+    <a href="#experiments" data-nav-link><span>02</span>Experiments<em>↗</em></a>
+    <a href="#about" data-nav-link><span>03</span>About the studio<em>↗</em></a>
+    <a href="#contact" data-nav-link><span>04</span>Make contact<em>↗</em></a>
+    <div class="nav-overlay__bottom"><span>NEW YORK · LONDON · ONLINE</span><span>SCROLL / EXPLORE</span></div>
+  </nav>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__meta"><span>AN INDEPENDENT CREATIVE PRACTICE</span><span>40° 42' 46.8" N / 73° 59'  W</span><span>SCROLL TO EXPLORE ↓</span></div>
+      <h1 id="hero-title"><span class="hero__line">Digital</span><span class="hero__line hero__line--second"><i>work</i> in motion<span class="hero__period">.</span></span></h1>
+      <div class="hero__art" role="img" aria-label="Sculptural blue glass ring and red orb in a sunlit gallery">
+        <img src="assets/images/blue-orbit.jpg" alt="A cobalt glass ring sculpture and a vermilion orb in a sunlit concrete gallery" fetchpriority="high">
+        <span class="hero__art-tag">FIG. 01 &nbsp;—&nbsp; STUDIES IN FORM</span>
+        <span class="hero__art-index">01 / 06</span>
+      </div>
+      <p class="hero__aside">We shape digital<br>things with a pulse.</p>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="work section-pad" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">01 — A SMALL SELECTION</span><h2 id="work-title">Made to<br><i>make you look.</i></h2></div>
+        <p class="section-heading__copy">A collection of visual systems, digital spaces and moments of interaction. Made with curiosity, and a little bit of friction.</p>
+      </div>
+      <div class="work-toolbar reveal">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">ALL <sup>06</sup></button>
+          <button class="filter" data-filter="identity" aria-pressed="false">IDENTITY <sup>02</sup></button>
+          <button class="filter" data-filter="digital" aria-pressed="false">DIGITAL <sup>03</sup></button>
+          <button class="filter" data-filter="image" aria-pressed="false">IMAGE <sup>01</sup></button>
+        </div>
+        <span class="mono work-count" id="work-count">06 PROJECTS</span>
+      </div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      <div class="archive-end reveal"><span>END OF SELECTED WORK</span><span>MORE THINGS ARE TAKING SHAPE <b>↘</b></span></div>
+    </section>
+
+    <section class="manifesto" id="about" aria-labelledby="about-title">
+      <div class="manifesto__top"><span class="eyebrow">02 — THE STUDIO</span><span class="mono">A PRACTICE OF ATTENTION</span></div>
+      <h2 id="about-title" class="manifesto__statement reveal">The internet is a place.<br><i>We make it feel like one.</i></h2>
+      <div class="manifesto__bottom reveal">
+        <div class="manifesto__stamp" aria-label="FRAME studio stamp">F<span>R</span><br>AM<br>E<span class="stamp-dot">.</span></div>
+        <p>FRAME is an independent digital practice working across identity, image and interaction. We partner with people who want to leave a feeling behind — not just a footprint.</p>
+        <div class="manifesto__details"><span>SMALL BY DESIGN</span><span>OPEN BY NATURE</span><span>WORKING EVERYWHERE</span></div>
+      </div>
+    </section>
+
+    <section class="experiments section-pad" id="experiments" aria-labelledby="experiments-title">
+      <div class="experiments__head reveal"><div><span class="eyebrow">03 — OPEN STUDIES</span><h2 id="experiments-title">Not every idea<br>needs a <i>brief.</i></h2></div><p>Small things from the edges of the desk. Move your pointer through the field.</p></div>
+      <div class="experiment-field" id="experiment-field" aria-label="Interactive color study. Move your pointer or drag across the field.">
+        <div class="field-grid" aria-hidden="true"></div><div class="field-orb field-orb--one" aria-hidden="true"></div><div class="field-orb field-orb--two" aria-hidden="true"></div>
+        <span class="field-label field-label--top">STUDY NO. 008 / LIGHT & MATTER</span><span class="field-label field-label--bottom">MOVE THROUGH THE FRAME <b>↗</b></span>
+        <span class="field-coord" id="field-coord">X 00&nbsp;&nbsp; Y 00</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__top"><span class="eyebrow">04 — THE NEXT FRAME</span><span class="mono">CURRENTLY OPEN FOR SELECT WORK</span></div>
+      <h2 id="contact-title" class="reveal">Have a good<br><i>feeling?</i></h2>
+      <a class="contact__link" href="mailto:hello@frame.studio"><span>LET'S MAKE SOMETHING THAT STAYS.</span><b aria-hidden="true">↗</b></a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="wordmark" href="#home" aria-label="FRAME, back to top">FR<span>A</span>ME<span class="wordmark__dot">.</span></a>
+    <span class="footer-note">INDEPENDENT BY NATURE.<br>CONNECTED BY DESIGN.</span>
+    <div class="footer-links"><a href="mailto:hello@frame.studio">EMAIL ↗</a><a href="#work">INDEX ↗</a></div>
+    <span class="footer-copy">© FRAME 2026<br>MADE SLOWLY, ON PURPOSE.</span>
+    <a class="back-top" href="#home" aria-label="Back to top">BACK TO TOP ↑</a>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" id="dialog-close" aria-label="Close project details">CLOSE <span>×</span></button>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+  <script src="js/interactions.js" defer></script>
+</body>
+</html>

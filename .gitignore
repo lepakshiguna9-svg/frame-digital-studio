@@ -1,0 +1,37 @@
+# macOS and Windows metadata
+.DS_Store
+Thumbs.db
+.AppleDouble
+._*
+.Spotlight-V100/
+.Trashes/
+Desktop.ini
+$RECYCLE.BIN/
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+*.tsbuildinfo
+
+# Local environment, credentials, and logs
+.env
+.env.*
+!.env.example
+.netrc
+credentials.json
+secrets.json
+*.pem
+*.p12
+*.pfx
+*.log
+*.swp
+*.swo
+*~
+
+# Synced, read-only project references
+/sources/
